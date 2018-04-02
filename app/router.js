@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.mount('sub-app1', { as: 'sa1' });
+  this.mount('sub-app2', { as: 'sa2' });
 });
 
 export default Router;
